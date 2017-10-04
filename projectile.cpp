@@ -12,6 +12,7 @@ auto euler_step(TState s, VecR2<double> accel) {
   next.position = s.position + (s.velocity * dt);
   next.velocity = s.velocity + (accel * dt);
   return next;
+  
 }
 
 void n_steps(unsigned n, TState state0) {
