@@ -37,6 +37,6 @@ struct TState {
 };
 
 void print_tstate(TState s) {
-  printf("%f %f %f %f %f %f %f\n", s.t, s.position.x, s.position.y, s.position.z, s.velocity.x,
+  printf("%f %f %f %f %f %f %f \n", s.t, s.position.x, s.position.y, s.position.z, s.velocity.x,
          s.velocity.y, s.velocity.z);
 }
