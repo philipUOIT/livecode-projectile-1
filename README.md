@@ -29,4 +29,4 @@ The output will be six columns of numbers with the following order:
 time [s], x-position [m], y-position [m], x-speed [m/s], y-speed [m/s]
 ```
 Plot the, you get the familiar parabolic trajectory, which will depend on your constants:  
-![](example.jpg)
+![](printme-1.jpg)
