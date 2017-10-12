@@ -24,9 +24,9 @@ and watch your terminal fill with numbers.
 
 ## Output
 
-The output will be six columns of numbers with the following order:
+The output will be 3 numbers that correspond to the position.
 ```
-time [s], x-position [m], y-position [m], x-speed [m/s], y-speed [m/s]
+ x-position [m], y-position [m], z-position [m]
 ```
 Plot the, you get the familiar parabolic trajectory, which will depend on your constants:  
 ![](plot.png)
