@@ -18,8 +18,8 @@ auto force(TState s) {
 auto euler_step(TState s, VecR2<double> accel) {
   TState next;
   next.t = s.t + dt;
-  next.position = s.position + (s.velocity * dt);
-  next.velocity = s.velocity + (accel * dt);
+  next.position = s.position + (s.velocity*dt)+ 0.5*accel*dt*dt;
+  next.velocity = s.velocity + (accel+accel * dt)/dt;
   return next;
 
 }
@@ -38,6 +38,6 @@ void n_steps(unsigned n, TState state0) {
 }
 
 int main() {
-  n_steps(1200, TState{0.0, {-e0/(pow(w,2)*pow(2.0,1.0/2.0)), 0,0}, {0, e0/(w*pow(2.0,1.0/2.0)) ,-0.25}});
+  n_steps(12000, TState{0.0, {-e0/(pow(w,2)*pow(2.0,1.0/2.0)), 0,0}, {0, e0/(w*pow(2.0,1.0/2.0)) ,-0.25}});
   return 0;
 }
