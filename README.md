@@ -28,5 +28,5 @@ The output will be 3 numbers that correspond to the position.
 ```
  x-position [m], y-position [m], z-position [m]
 ```
-Plot the, you get the familiar parabolic trajectory, which will depend on your constants:  
+Plot them and you get the familiar parabolic trajectory, which will depend on your constants:  
 ![](plot.png)
